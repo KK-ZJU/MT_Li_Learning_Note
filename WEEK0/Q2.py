@@ -7,7 +7,9 @@ w,h = lena.size
 for j in range(h):
     for i in range(w):
         if lena.getpixel((i,j)) == lena_modified.getpixel((i,j)):
-            lena_modified.putpixel((i,j),255)
+            print(lena.getpixel((i,j)))
+            lena_modified.putpixel((i,j),(255,2,120,0))
+            print(lena_modified.getpixel((i,j)))
 
 lena_modified.show()
-lena_modified.save("ans_two.png")
+lena_modified.save("ans_two2.png")
